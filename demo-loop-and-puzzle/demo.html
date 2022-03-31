@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //KN: Vòng lặp là lặp đi lặp lại 1 hoặc nhiều dòng lệnh
+    //1: let i = 0 => Khởi tạo biến đếm
+    //2: i < 100 => Điều kiện để vòng lặp chạy (Xét true/ false)
+    //3: i++ => bước nhảy
+
+    //For đủ
+    // for (let i = 0; i !== 10; i++) {
+    //     console.log(i);
+    //     document.write("Em hứa sẽ làm bài tập về nhà đầy đủ. ");
+    // }
+
+    //For dùng với trường hợp biết trước số lần lặp
+    let j = 0;
+    for (; j < 100;) {
+        console.log(j);
+        j++;
+    }
+
+    //While: Lặp theo điều kiện
+    let k = 0;
+    while (k < 100) { //Điều kiện lặp
+        console.log(k);
+        k++;
+    }
+
+    //
+    let count = 10;
+    while (true) {
+        console.log("Hello");
+        count = count * 2;
+        if (count > 1000) break;
+
+    }
+
+    do { //chay 1 lan
+        //statements
+    }while (condition)
+
+</script>
+</body>
+</html>

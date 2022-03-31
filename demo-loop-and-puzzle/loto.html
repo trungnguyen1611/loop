@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loto</title>
+</head>
+<body>
+<script>
+  //Math.random -> 0 ->0.99999
+  //Math.floor -> làm tròn xuống
+  //Math.round -> Làm tròn đúng
+  //Math.ceil -> Làm tròn lên
+  // let loto = Math.floor(Math.random()*100);
+  // console.log(loto);
+  let number;
+  let count = 0;
+  while (true){
+      count++
+      // number = +prompt("Hôm nay bạn đánh con gì?")
+      let loto = Math.floor(Math.random()*100);
+      number = Math.floor(Math.random()*100);
+      if(number != loto){
+          // alert("Bạn đã đánh số "+number+". Trượt rồi")
+      }else {
+          // alert("Bạn đã đánh số "+number+". Mua nhà thôi");
+          alert(`Bạn đã đánh số ${number} sau ${count} lần đánh. Mua nhà thôi`);
+          break;
+      }
+  }
+
+  let number2;
+  let loto2 = Math.floor(Math.random()*100);
+
+  do {
+      number2 = +prompt("Đánh nào:");
+      if(number2 == loto2){
+          alert("Mua nhà thôi");
+          break;
+      }
+  }while (true)
+
+//  number2 != loto2 -> true/false
+</script>
+</body>
+</html>
